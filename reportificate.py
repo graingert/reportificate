@@ -7,17 +7,10 @@
 #
 
 import itertools
-import requests
 import getpass
 import os
-import dateutil.parser
 import datetime
-import percache
-import keyring
 import httplib
-
-import matplotlib.pyplot as plt
-import numpy as np
 
 from operator import itemgetter
 from contextlib import closing
@@ -26,8 +19,15 @@ from subprocess import Popen, PIPE
 from urlparse import urljoin
 from collections import defaultdict, deque
 
-from xdg import BaseDirectory
+import percache
+import keyring
+import dateutil.parser
+import requests
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+from xdg import BaseDirectory
 from six.moves import configparser
 
 github_url = "https://api.github.com/"
